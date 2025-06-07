@@ -49,6 +49,8 @@ export const WalletProvider = ({ children }: { children: ReactNode }) => {
           `Connected ${accounts.length} account(s) from ${fromWallet}.`,
         )
         setAvailableAccounts(accounts)
+        // automatically select the first account, if avaialable
+        setSelectedAccount(accounts.at(0) ?? undefined)
       })
       .catch((err) => {
         setAvailableAccounts([])
