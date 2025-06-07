@@ -1,14 +1,13 @@
+import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createRouter } from '@tanstack/react-router'
 
-import * as TanStackQueryProvider from './integrations/tanstack-query/root-provider.tsx'
-
-// Import the generated route tree
 import { routeTree } from './routeTree.gen'
-
-import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
+import * as TanStackQueryProvider from '@/providers/query-client-provider.tsx'
+
+import { WalletProvider } from '@/providers/wallet-provider.tsx'
+import './styles.css'
 
 // Create a new router instance
 const router = createRouter({
@@ -36,7 +35,9 @@ if (rootElement && !rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <TanStackQueryProvider.Provider>
-        <RouterProvider router={router} />
+        <WalletProvider>
+          <RouterProvider router={router} />
+        </WalletProvider>
       </TanStackQueryProvider.Provider>
     </StrictMode>,
   )

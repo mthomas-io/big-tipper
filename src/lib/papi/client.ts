@@ -1,4 +1,3 @@
-// `dot` is the name we gave to `npx papi add`
 import { ksm } from '@polkadot-api/descriptors'
 import { createClient } from 'polkadot-api'
 import { getSmProvider } from 'polkadot-api/sm-provider'

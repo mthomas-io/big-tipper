@@ -43,7 +43,7 @@ But don't get greedy! Bigger tips will face more scrutiny by holders!
 $350 USD
 1. Connect Wallet
 2. Tip proposal flow
-3. Tatal USD converted to KSM + 25%
+3. Total USD converted to KSM + 25%
 4. Presentation to Supervisors
 
 ### Milestone 2, Tip Creation &#x20;

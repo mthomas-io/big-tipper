@@ -8,7 +8,7 @@ export const Route = createFileRoute('/')({
 
 function App() {
   const { data } = useQuery({
-    queryKey: ['people'],
+    queryKey: ['account'],
     queryFn: () =>
       // Jay
       getAccountInfo('E5qFqe5g5iS4Byu4hyKLAavayXtCiuuuK4xzuLcnQWvtqrg'),
