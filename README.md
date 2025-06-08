@@ -1,3 +1,13 @@
+## Getting started
+
+```bash
+git clone git@github.com:mthomas-io/big-tipper.git
+cd big-tipper
+bun install
+bun papi
+bun run dev
+```
+
 ## Project Scope
 
 Staying grounded while we reach for the stars!
